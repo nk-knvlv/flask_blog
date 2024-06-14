@@ -1,40 +1,25 @@
 {% extends 'layout.html' %}
 
 {% block header %}
-<header class="header">
-        <nav class="crumbs">
-            <ul class="nav">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Регистрация</a></li>
-                <li><a href="#">Логин</a></li>
-                <li><a href="#">Аккаунт</a></li>
-                <li><a href="#">Создать</a></li>
-                <li><a href="#">Выход</a></li>
-            </ul>
-        </nav>
-</header>
+{% include 'header.html' %}
 {% endblock header %}
 
 {% block content %}
-<div class="content">
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur dolores eum ex exercitationem
-        impedit optio quibusdam quidem reiciendis, repellat! A accusamus aperiam dolore eum ipsum iusto libero officia,
-        quia.
+<div class="info">
+    <div class="description">
+        Konovalov Nikita - backend developer
     </div>
-    <div>Architecto commodi corporis cum distinctio doloremque earum error laboriosam libero magnam maxime, numquam
-        porro quas, quidem quisquam ratione, repellat sunt temporibus voluptatem! Animi asperiores beatae, molestias
-        neque placeat porro temporibus!
-    </div>
-    <div>Adipisci, aliquam aspernatur atque, consequuntur dolorum eos excepturi illo, magni maiores molestias natus
-        nobis nulla quo ratione recusandae sapiente tenetur! Ad amet aut autem cum labore recusandae voluptates. Animi,
-        non.
-    </div>
+    <ol class="tags">
+        <li><a href="{{ url_for('html_page') }}">Html</a></li>
+        <li><a href="{{ url_for('css_page') }}">css</a></li>
+        <li><a href="{{ url_for('js_page') }}">Python</a></li>
+        <li><a href="{{ url_for('python_page') }}">JS</a></li>
+        <li><a href="{{ url_for('flask_page') }}">Flask</a></li>
+        <li><a href="{{ url_for('django_page') }}">Django</a></li>
+    </ol>
 </div>
 {% endblock content %}
 
 {% block footer %}
-<footer class="footer">
-    <p>Все права защищены</p>
-</footer>
+{% include 'footer.html' %}
 {% endblock footer %}

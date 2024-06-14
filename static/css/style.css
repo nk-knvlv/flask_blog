@@ -21,15 +21,27 @@ body {
 .header {
     height: 140px;
     border: 2px green solid;
-}
-
-.nav {
     display: flex;
-    width: 100%;
-    padding: 10px 0;
+    align-content: center;
+    color: #000;
 }
 
-.nav li {
+.logo{
+    width: max-content;
+    display: flex;
+}
+
+.navigation{
+    width: 100%;
+}
+.navigation ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.navigation li {
     margin: 0 auto;
 }
 
@@ -38,6 +50,11 @@ body {
 
 .content {
     border: 2px black solid;
+    background-image: url("https://cdn.prod.website-files.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
+    background-color: #161616;
+}
+
+.info{
 }
 
 /* Footer */
