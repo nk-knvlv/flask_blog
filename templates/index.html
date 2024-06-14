@@ -1,17 +1,40 @@
 {% extends 'layout.html' %}
 
-{% block navigation %}
-<h1>lorem</h1>
-{% endblock navigation %}
+{% block header %}
+<header class="header">
+        <nav class="crumbs">
+            <ul class="nav">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Логин</a></li>
+                <li><a href="#">Аккаунт</a></li>
+                <li><a href="#">Создать</a></li>
+                <li><a href="#">Выход</a></li>
+            </ul>
+        </nav>
+</header>
+{% endblock header %}
 
 {% block content %}
-<h1>lorem</h1>
+<div class="content">
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur dolores eum ex exercitationem
+        impedit optio quibusdam quidem reiciendis, repellat! A accusamus aperiam dolore eum ipsum iusto libero officia,
+        quia.
+    </div>
+    <div>Architecto commodi corporis cum distinctio doloremque earum error laboriosam libero magnam maxime, numquam
+        porro quas, quidem quisquam ratione, repellat sunt temporibus voluptatem! Animi asperiores beatae, molestias
+        neque placeat porro temporibus!
+    </div>
+    <div>Adipisci, aliquam aspernatur atque, consequuntur dolorum eos excepturi illo, magni maiores molestias natus
+        nobis nulla quo ratione recusandae sapiente tenetur! Ad amet aut autem cum labore recusandae voluptates. Animi,
+        non.
+    </div>
+</div>
 {% endblock content %}
 
-{% block main_page %}
-<h1>lorem</h1>
-{% endblock main_page %}
-
 {% block footer %}
-
+<footer class="footer">
+    <p>Все права защищены</p>
+</footer>
 {% endblock footer %}

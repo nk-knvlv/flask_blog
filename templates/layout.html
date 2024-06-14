@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     {% block title %}
-        {% if title %}
-            <title>Flask - {{ title }}</title>
-            {% else %}
-            <title>Flask Blog</title>
-        {% endif %}
+    {% if title %}
+    <title>Flask - {{ title }}</title>
+    {% else %}
+    <title>Flask Blog</title>
+    {% endif %}
     {% endblock title %}
 
 </head>
@@ -21,17 +21,14 @@
 <div class="wrapper">
 
 
-{% block navigation %}
-{% endblock navigation %}
+    {% block header %}
+    {% endblock header %}
 
-{% block content %}
-{% endblock content %}
+    {% block content %}
+    {% endblock content %}
 
-{% block main_page %}
-{% endblock main_page %}
-
-{% block footer %}
-{% endblock footer %}
+    {% block footer %}
+    {% endblock footer %}
 
 </div>
 

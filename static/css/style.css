@@ -1,7 +1,47 @@
-h1 {
-    color:red;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.wrapper{
-    outline: 1px orange solid;
+li {
+    display: block;
+}
+
+body {
+    height: 100%;
+}
+
+.wrapper {
+    border: 2px blue solid;
+}
+
+
+/* Header */
+
+.header {
+    height: 140px;
+    border: 2px green solid;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav li {
+    margin: 0 auto;
+}
+
+
+/* Content */
+
+.content {
+    border: 2px black solid;
+}
+
+/* Footer */
+
+.footer {
+    border: 2px gray solid;
 }
