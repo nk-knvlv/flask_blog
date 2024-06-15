@@ -1,2 +1,3 @@
 .idea/
 .flask_blog_venv/
+__pycache__
