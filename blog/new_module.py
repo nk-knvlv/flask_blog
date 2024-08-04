@@ -1,0 +1,2 @@
+class NewModule:
+    pass
