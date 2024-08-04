@@ -3,6 +3,7 @@ from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import Integer, String
 from sqlalchemy.orm import Mapped, mapped_column
 
+
 class User(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)
     username: Mapped[str] = mapped_column(unique=True)
@@ -28,4 +29,6 @@ class DB:
         result = 'result string'
         return result
 
-
+    def fake_close_connection(sql, self):
+        result = 'result string'
+        return result
