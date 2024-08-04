@@ -10,6 +10,7 @@ app.config.from_mapping(
     SECRET_KEY='dev',
     DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
 )
+#неинформативный комментарий
 config_path = 'config.py'
 
 if os.path.exists(config_path):
