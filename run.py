@@ -10,7 +10,7 @@ app.config.from_mapping(
     SECRET_KEY='dev',
     DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
 )
-#неинформативный комментарий
+# неинформативный комментарий
 config_path = 'config.py'
 
 if os.path.exists(config_path):
@@ -73,6 +73,11 @@ def flask_page():
 
 
 @app.route('/django_page')
+def django_page():
+    return render_template('django_page.html', title='django')
+
+
+@app.route('/crocs')
 def django_page():
     return render_template('django_page.html', title='django')
 
