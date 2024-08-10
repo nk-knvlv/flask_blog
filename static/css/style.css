@@ -7,6 +7,10 @@ li {
     display: block;
 }
 
+ul {
+    display: block;
+}
+
 body {
     height: 100%;
 }
