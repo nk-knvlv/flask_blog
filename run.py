@@ -54,6 +54,7 @@ def html_page():
     return render_template('html_page.html', title='html')
 
 #какой то комментарий
+#какой то комментарий 2
 @app.route('/css_page')
 def css_page():
     return render_template('css_page.html', title='css')
