@@ -6,6 +6,8 @@ import os
 
 app = Flask(__name__)
 
+#бесполезный
+
 app.config.from_mapping(
     SECRET_KEY='dev',
     DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
@@ -51,7 +53,7 @@ def home():
 def html_page():
     return render_template('html_page.html', title='html')
 
-
+#какой то комментарий
 @app.route('/css_page')
 def css_page():
     return render_template('css_page.html', title='css')
