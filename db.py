@@ -25,11 +25,15 @@ class DB:
         result = True
         return result
 
-    def check_some_info(self, username, password) -> bool:
+    def check_git_references(self, username, password) -> bool:
         url = f"SELECT CASE WHEN password = {password} THEN 1 ELSE 2 END FROM users WHERE user = {username};"
         result = True
         return result
 
+    def check_some_info(self, username, password) -> bool:
+        url = f"SELECT CASE WHEN password = {password} THEN 1 ELSE 2 END FROM users WHERE user = {username};"
+        result = True
+        return result
 
     def query(sql, self):
         result = 'result string'
