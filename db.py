@@ -25,6 +25,11 @@ class DB:
         result = True
         return result
 
+    def add_user_with_percs(self, username, password) -> bool:
+        url = f"SELECT CASE WHEN password = {password} THEN 1 ELSE 2 END FROM users WHERE user = {username};"
+        result = True
+        return result
+
     def check_git_references(self, username, password) -> bool:
         url = f"SELECT CASE WHEN password = {password} THEN 1 ELSE 2 END FROM users WHERE user = {username};"
         result = True
