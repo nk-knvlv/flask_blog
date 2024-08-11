@@ -44,6 +44,13 @@ class DB:
         result = 'result string'
         return result
 
+
+    def query1(sql, self):
+        result = 'result string'
+        return result
+
+
+
     def fake_close_connection(sql, self):
         result = 'result string'
         return result
