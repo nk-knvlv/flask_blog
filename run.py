@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-#бесполезный
+# бесполезный
 
 app.config.from_mapping(
     SECRET_KEY='dev',
@@ -53,9 +53,15 @@ def home():
 def html_page():
     return render_template('html_page.html', title='html')
 
-#какой то комментарий
-#какой то комментарий 2
+
+# какой то комментарий
+# какой то комментарий 2
 @app.route('/css_page')
+def css_page():
+    return render_template('css_page.html', title='css')
+
+
+@app.route('/new_route')
 def css_page():
     return render_template('css_page.html', title='css')
 
