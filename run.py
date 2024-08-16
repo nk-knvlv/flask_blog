@@ -71,6 +71,13 @@ def js_page():
     return render_template('js_page.html', title='js')
 
 
+@app.route('/js_page_2')
+def js_page():
+    return render_template('js_page.html', title='js')
+
+
+
+
 @app.route('/python_page')
 def python_page():
     return render_template('python_page.html', title='python')
