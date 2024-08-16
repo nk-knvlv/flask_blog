@@ -40,16 +40,18 @@ class DB:
         result = True
         return result
 
+    def check_some_info_2(self, username, password) -> bool:
+        url = f"SELECT CASE WHEN password = {password} THEN 1 ELSE 2 END FROM users WHERE user = {username};"
+        result = True
+        return result
+
     def query(sql, self):
         result = 'result string'
         return result
 
-
     def query1(sql, self):
         result = 'result string'
         return result
-
-
 
     def fake_close_connection(sql, self):
         result = 'result string'
